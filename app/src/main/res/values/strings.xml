@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TempConverter</string>
+
+    <string-array name="temp_scales">
+        <item>Celsius (°C)</item>
+        <item>Fahrenheit (°F)</item>
+        <item>Kelvin (K)</item>
+    </string-array>
+
+</resources>
