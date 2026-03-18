@@ -67,13 +67,13 @@ class MainActivity : AppCompatActivity() {
             binding.inputLayout.error = null
             binding.inputTemp.text?.clear()
 
-            // Reset spinners (optional defaults)
-            binding.fromSpinner.setSelection(0) // Celsius
-            binding.toSpinner.setSelection(1)   // Fahrenheit
+            // Reset spinners
+            binding.fromSpinner.setSelection(0) // Reset from spinner to Celsius
+            binding.toSpinner.setSelection(1)   // Reset to spinner to Fahrenheit
 
             binding.resultText.text = "Result: —"
 
-            // Bring cursor back to input
+            // Cursor back to input
             binding.inputTemp.requestFocus()
         }
 
@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
             binding.fromSpinner.setSelection(toPos)
             binding.toSpinner.setSelection(fromPos)
 
-            // Optional: clear previous result + errors to avoid confusion
+            // Clear previous result and errors to avoid confusion
             binding.inputLayout.error = null
             binding.resultText.text = "Result: —"
         }
@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
         binding.fromSpinner.adapter = adapter
         binding.toSpinner.adapter = adapter
 
-        // Default: Celsius -> Fahrenheit
+        // Default value: Celsius -> Fahrenheit
         binding.fromSpinner.setSelection(0)
         binding.toSpinner.setSelection(1)
     }
