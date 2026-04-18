@@ -1,7 +1,6 @@
 # Temperature Converter (Android - Kotlin)
 
 A simple Android application built with **Kotlin** in **Android Studio** that converts temperature values between **Celsius (°C)**, **Fahrenheit (°F)**, and **Kelvin (K)**.  
-This project was developed for **Mobile Development Coursework 2 – Question 1**.
 
 ---
 
